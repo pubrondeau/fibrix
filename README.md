@@ -45,6 +45,10 @@ Additional quarterly, half-yearly, and yearly pricing available on the website.
 
 Each package is available in 4 regional variants: Hindi, Marathi, Gujarati & Bangla. Channel lists are grouped by category (Entertainment, Movies, Kids, Sports, Infotainment, News, etc.) with expandable dropdowns. Channel data sourced from `iptvchannel.csv`.
 
+### Channel Search
+
+A search bar above the IPTV cards lets users find any channel and see which packs include it. Typing a channel name (min 2 chars) displays a results table with ✓/✗ availability across all 4 packages, helping users decide which pack to choose.
+
 ## OTT Platforms
 
 Included with select broadband plans:
@@ -81,9 +85,11 @@ Bill payments are handled externally at **[pay.fibrixllp.org](https://pay.fibrix
 ## UI Features
 
 - **Collapsible header** — hides on scroll down, shows on scroll up (all pages, all screen sizes)
+- **Navigation** — Home, IPTV, OTT, About Us, Contact Us, Pay Bill (IPTV & OTT link to homepage anchors from other pages)
 - **Plan duration tabs** — pill-style Monthly / Quarterly / Half-Yearly / Yearly switcher
 - **OTT platform tabs** — Premium / Prime Plus toggle with text-only grid
 - **IPTV expandable cards** — "View Channel List" button reveals categorised channel grid per package
+- **IPTV channel search** — real-time search bar to look up any channel across all 4 packs with ✓/✗ availability table
 - **Hardware list cards** — numbered cards with red accent border, no images
 - **WhatsApp integration** — floating chat button on all pages
 - **Mobile-first responsive** — hamburger nav, stacked grids, optimised touch targets
