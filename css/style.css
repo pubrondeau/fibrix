@@ -1026,6 +1026,21 @@ ul {
   text-overflow: ellipsis;
 }
 
+.channel-cat {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0.8rem 0 0.3rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.channel-cat:first-child {
+  margin-top: 0;
+}
+
 .iptv-note {
   text-align: center;
   font-size: 0.75rem;
