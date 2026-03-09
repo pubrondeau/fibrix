@@ -51,15 +51,15 @@
 
 /* -- Header -- */
 [data-theme="dark"] .header {
-  background: var(--bg);
+  background: transparent;
   box-shadow: none;
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
 }
 
 [data-theme="dark"] .header.header-scrolled {
   background: var(--bg);
   box-shadow: none;
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
 }
 
 [data-theme="dark"] .hamburger span {
