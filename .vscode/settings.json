@@ -3,6 +3,10 @@
         "/^Set-Location \"c:\\\\Users\\\\shourjo\\\\Documents\\\\fibrix landing page\"; git add -A; git commit -m \"Add OTT platforms section with Premium \\(29\\) and Prime Plus \\(27\\) tabs\"; git push origin main$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^cd \"c:\\\\Users\\\\shourjo\\\\Documents\\\\fibrix landing page\" ; git add -A ; git commit -m \"Update README with IPTV, OTT, plan tabs, hardware & UI features\" ; git push$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }

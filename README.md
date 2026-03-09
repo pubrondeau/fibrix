@@ -1,6 +1,6 @@
 # Fibrix Broadband - Website
 
-Official website for **[fibrixllp.org](https://fibrixllp.org)** - Fibrix Broadband, a broadband internet and networking hardware provider based in Joynagar Mojilpur, South 24 Parganas, West Bengal.
+Official website for **[fibrixllp.org](https://fibrixllp.org)** - Fibrix Broadband, a broadband internet, IPTV, and networking hardware provider based in Joynagar Mojilpur, South 24 Parganas, West Bengal.
 
 **Fibrix Broadband** is the brand name of **Fibrix LLP** (LLP ID: ACT-8822).
 
@@ -8,7 +8,7 @@ Official website for **[fibrixllp.org](https://fibrixllp.org)** - Fibrix Broadba
 
 | Page | File | Description |
 |------|------|-------------|
-| Home | `index.html` | Hero, services, broadband plans, hardware catalog, CTA |
+| Home | `index.html` | Hero, services, broadband plans (4 duration tabs), OTT platforms, IPTV packages, hardware catalog, CTA |
 | About Us | `about.html` | Company info, team, mission ("Internet for All"), vision, values |
 | Contact Us | `contact.html` | Contact form (Google Form integration) & company details |
 | Privacy Policy | `privacy-policy.html` | Data collection, usage, and privacy practices |
@@ -17,16 +17,44 @@ Official website for **[fibrixllp.org](https://fibrixllp.org)** - Fibrix Broadba
 
 ## Broadband Plans
 
-| Plan | Speed | Price (incl. GST) | Duration |
-|------|-------|--------------------|----------|
-| Start 30 | 30 Mbps | Rs.750 | 3 months |
-| OTT + 30 | 30 Mbps | Rs.550/month | Monthly (32 OTTs included) |
-| Connect 40 | 40 Mbps | Rs.330/month | Monthly |
-| Family 60 | 60 Mbps | Rs.430/month | Monthly |
-| Power 80 (Most Popular) | 80 Mbps | Rs.520/month | Monthly |
-| Turbo 100 | 100 Mbps | Rs.600/month | Monthly |
+Plans are available in **Monthly**, **Quarterly (90 days)**, **Half-Yearly (180 days)**, and **Yearly (365 days)** durations with tabbed UI.
 
-More durations (3-month, 6-month, yearly) to be added.
+### Monthly Plans
+
+| Plan | Speed | Price (incl. GST) |
+|------|-------|--------------------|
+| Connect 40 | 40 Mbps | ₹330/mo |
+| Family 60 | 60 Mbps | ₹430/mo |
+| Power 80 (Most Popular) | 80 Mbps | ₹530/mo |
+| Turbo 100 | 100 Mbps | ₹600/mo |
+| OTT + 30 | 30 Mbps | ₹550/mo |
+| OTT + 60 | 60 Mbps | ₹650/mo |
+| OTT + 80 | 80 Mbps | ₹750/mo |
+| OTT + 100 | 100 Mbps | ₹820/mo |
+
+Additional quarterly, half-yearly, and yearly pricing available on the website.
+
+## IPTV Packages
+
+| Package | Channels | Price (incl. GST) |
+|---------|----------|--------------------|
+| HD | 49 | ₹90/mo |
+| HD+ | 56 | ₹120/mo |
+| ACE HD (Popular) | 74 | ₹150/mo |
+| AXEL HD | 95 | ₹200/mo |
+
+Each package is available in 4 regional variants: Hindi, Marathi, Gujarati & Bangla. Channel lists are grouped by category (Entertainment, Movies, Kids, Sports, Infotainment, News, etc.) with expandable dropdowns. Channel data sourced from `iptvchannel.csv`.
+
+## OTT Platforms
+
+Included with select broadband plans:
+
+- **Premium OTT Pack** — 29 platforms
+- **Prime Plus OTT Pack** — 27 platforms
+
+## Networking Hardware
+
+Listed as a catalog (no e-commerce): Routers & Switches, ONU/ONT Devices, GPON/EPON OLT, Fiber Optic Cables, Patch Cords & Connectors, Set-Top Boxes.
 
 ## Logos
 
@@ -49,6 +77,16 @@ The contact form submits to a Google Form via `fetch` (no-cors POST). Entry IDs:
 ## Payment Portal
 
 Bill payments are handled externally at **[pay.fibrixllp.org](https://pay.fibrixllp.org/customer_portal)**.
+
+## UI Features
+
+- **Collapsible header** — hides on scroll down, shows on scroll up (all pages, all screen sizes)
+- **Plan duration tabs** — pill-style Monthly / Quarterly / Half-Yearly / Yearly switcher
+- **OTT platform tabs** — Premium / Prime Plus toggle with text-only grid
+- **IPTV expandable cards** — "View Channel List" button reveals categorised channel grid per package
+- **Hardware list cards** — numbered cards with red accent border, no images
+- **WhatsApp integration** — floating chat button on all pages
+- **Mobile-first responsive** — hamburger nav, stacked grids, optimised touch targets
 
 ## Hosting & Deployment
 
@@ -76,24 +114,25 @@ www -> shourjo-h.github.io
 
 ## SEO
 
-- `robots.txt` - allows all crawlers, points to sitemap
-- `sitemap.xml` - all 6 pages with priorities
+- `robots.txt` — allows all crawlers, points to sitemap
+- `sitemap.xml` — all 6 pages with priorities
 - Open Graph meta tags on all pages for social sharing previews
 
 ## Customisation
 
-- **Broadband plans & pricing:** Edit plan cards in `index.html`
-- **Brand color:** `#c11111` - edit CSS variables in `css/style.css`
+- **Broadband plans & pricing:** Edit plan cards in `index.html` (inside `.plan-tab-content` divs)
+- **IPTV packages:** Edit IPTV cards in `index.html` (inside `#iptv` section); update `iptvchannel.csv` for reference
+- **Brand color:** `#c11111` — edit CSS variables in `css/style.css`
 - **Contact form:** Update Google Form entry IDs in `contact.html` if form fields change
 
 ## Tech Stack
 
 - Pure HTML5 + CSS3 + vanilla JavaScript
-- Google Fonts (Inter)
+- Google Fonts (Inter, weights 400–800)
 - GitHub Pages hosting
 - Google Forms backend for contact form
 
 ## Team
 
-- **Papia Banerjee** - Partner
-- **Jibesh Mahato** - Partner
+- **Papia Banerjee** — Partner
+- **Jibesh Mahato** — Partner
