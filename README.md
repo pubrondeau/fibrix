@@ -40,8 +40,8 @@ Additional quarterly, half-yearly, and yearly pricing available on the website.
 |---------|----------|--------------------|
 | HD | 49 | ₹90/mo |
 | HD+ | 56 | ₹120/mo |
-| ACE HD (Popular) | 74 | ₹150/mo |
-| AXEL HD | 95 | ₹200/mo |
+| ACE HD | 74 | ₹150/mo |
+| AXEL HD (Popular) | 95 | ₹200/mo |
 
 Each package is available in 4 regional variants: Hindi, Marathi, Gujarati & Bangla. Channel lists are grouped by category (Entertainment, Movies, Kids, Sports, Infotainment, News, etc.) with expandable dropdowns. Channel data sourced from `iptvchannel.csv`.
 
