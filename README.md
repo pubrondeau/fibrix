@@ -60,10 +60,34 @@ Included with select broadband plans:
 
 Listed as a catalog (no e-commerce): Routers & Switches, ONU/ONT Devices, GPON/EPON OLT, Fiber Optic Cables, Patch Cords & Connectors, Set-Top Boxes.
 
+## Project Structure
+
+```
+fibrixllp.github.io/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+│       ├── logo-primary.png    (header & favicon)
+│       └── logo-footer.png     (footer)
+├── data/
+│   └── iptvchannel.csv         (IPTV channel data source)
+├── index.html
+├── about.html
+├── contact.html
+├── privacy-policy.html
+├── terms.html
+├── refund-policy.html
+├── CNAME
+├── robots.txt
+├── sitemap.xml
+└── README.md
+```
+
 ## Logos
 
-- **Header / Favicon:** `Fibrix Logo Style 1.png`
-- **Footer:** `Fibrix Logo Style 2.png`
+- **Header / Favicon:** `assets/images/logo-primary.png`
+- **Footer:** `assets/images/logo-footer.png`
 
 ## Contact Form
 
@@ -131,8 +155,8 @@ www -> shourjo-h.github.io
 ## Customisation
 
 - **Broadband plans & pricing:** Edit plan cards in `index.html` (inside `.plan-tab-content` divs)
-- **IPTV packages:** Edit IPTV cards in `index.html` (inside `#iptv` section); update `iptvchannel.csv` for reference
-- **Brand color:** `#c11111` — edit CSS variables in `css/style.css`
+- **IPTV packages:** Edit IPTV cards in `index.html` (inside `#iptv` section); update `data/iptvchannel.csv` for reference
+- **Brand color:** `#c11111` — edit CSS variables in `assets/css/style.css`
 - **Contact form:** Update Google Form entry IDs in `contact.html` if form fields change
 
 ## Tech Stack
