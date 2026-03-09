@@ -25,6 +25,7 @@
       <nav class="nav-links" id="navLinks">
         <a href="index.html" class="active">Home</a>
         <a href="#iptv">IPTV</a>
+        <a href="#ott">OTT</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
         <a href="https://pay.fibrixllp.org/customer_portal">Pay Bill</a>
@@ -592,6 +593,15 @@
       <h2 class="section-title">IPTV <span>Packages</span></h2>
       <p class="section-subtitle">Premium HD channels delivered over fiber — available in Hindi, Marathi, Gujarati &amp; Bangla</p>
 
+      <div class="iptv-search-wrap">
+        <div class="iptv-search-box">
+          <svg class="iptv-search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="iptvSearch" class="iptv-search-input" placeholder="Search for a channel (e.g., Star Plus, Discovery)..." oninput="searchChannels(this.value)" autocomplete="off">
+          <button class="iptv-search-clear" id="iptvSearchClear" onclick="clearChannelSearch()" style="display:none;">&times;</button>
+        </div>
+        <div id="iptvSearchResults" class="iptv-search-results" style="display:none;"></div>
+      </div>
+
       <div class="iptv-grid">
         <!-- ONYX PLAY HD -->
         <div class="iptv-card">
@@ -1010,6 +1020,81 @@
         document.getElementById('ott-' + tab.getAttribute('data-ott')).classList.add('active');
       });
     });
+
+    // IPTV Channel Search
+    (function() {
+      var packNames = ['HD', 'HD+', 'ACE HD', 'AXEL HD'];
+      var packPrices = ['₹90', '₹120', '₹150', '₹200'];
+      var cards = document.querySelectorAll('.iptv-card');
+      var channelData = {}; // { channelName: [true/false for each pack] }
+
+      cards.forEach(function(card, idx) {
+        var spans = card.querySelectorAll('.iptv-channels .channel-grid span');
+        spans.forEach(function(sp) {
+          var name = sp.textContent.trim();
+          var key = name.toLowerCase();
+          if (!channelData[key]) {
+            channelData[key] = { name: name, packs: [false, false, false, false] };
+          }
+          channelData[key].packs[idx] = true;
+        });
+      });
+
+      var allChannels = Object.keys(channelData).sort();
+
+      window.searchChannels = function(query) {
+        var resultsDiv = document.getElementById('iptvSearchResults');
+        var clearBtn = document.getElementById('iptvSearchClear');
+        query = query.trim().toLowerCase();
+
+        if (query.length < 2) {
+          resultsDiv.style.display = 'none';
+          clearBtn.style.display = 'none';
+          return;
+        }
+        clearBtn.style.display = 'flex';
+
+        var matches = allChannels.filter(function(key) {
+          return key.indexOf(query) !== -1;
+        });
+
+        if (matches.length === 0) {
+          resultsDiv.innerHTML = '<div class="iptv-search-empty">No channels found matching "<strong>' + query.replace(/</g,'&lt;') + '</strong>"</div>';
+          resultsDiv.style.display = 'block';
+          return;
+        }
+
+        // Limit to 20 results
+        var shown = matches.slice(0, 20);
+        var html = '<table class="iptv-search-table"><thead><tr><th>Channel</th>';
+        for (var i = 0; i < packNames.length; i++) {
+          html += '<th>' + packNames[i] + '<span class="search-pack-price">' + packPrices[i] + '</span></th>';
+        }
+        html += '</tr></thead><tbody>';
+
+        shown.forEach(function(key) {
+          var ch = channelData[key];
+          html += '<tr><td class="search-ch-name">' + ch.name + '</td>';
+          for (var j = 0; j < 4; j++) {
+            html += '<td class="' + (ch.packs[j] ? 'search-yes' : 'search-no') + '">' + (ch.packs[j] ? '✓' : '✗') + '</td>';
+          }
+          html += '</tr>';
+        });
+
+        html += '</tbody></table>';
+        if (matches.length > 20) {
+          html += '<div class="iptv-search-more">Showing 20 of ' + matches.length + ' results — type more to narrow down</div>';
+        }
+        resultsDiv.innerHTML = html;
+        resultsDiv.style.display = 'block';
+      };
+
+      window.clearChannelSearch = function() {
+        document.getElementById('iptvSearch').value = '';
+        document.getElementById('iptvSearchResults').style.display = 'none';
+        document.getElementById('iptvSearchClear').style.display = 'none';
+      };
+    })();
   </script>
 </body>
 </html>
