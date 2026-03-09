@@ -121,8 +121,12 @@ www -> shourjo-h.github.io
 ## SEO
 
 - `robots.txt` — allows all crawlers, points to sitemap
-- `sitemap.xml` — all 6 pages with priorities
-- Open Graph meta tags on all pages for social sharing previews
+- `sitemap.xml` — all 6 pages with priorities and lastmod dates
+- `<link rel="canonical">` on every page
+- Open Graph meta tags on all pages (title, description, type, url, image, site_name)
+- Twitter Card meta tags on all pages (summary_large_image)
+- JSON-LD LocalBusiness structured data on homepage (name, address, phone, services, area served)
+- Semantic `<title>` tags per page
 
 ## Customisation
 
