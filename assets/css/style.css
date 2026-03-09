@@ -51,13 +51,15 @@
 
 /* -- Header -- */
 [data-theme="dark"] .header {
-  background: var(--card-bg);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: var(--bg);
+  box-shadow: none;
+  border-bottom: 1px solid var(--border);
 }
 
 [data-theme="dark"] .header.header-scrolled {
-  background: var(--card-bg);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  background: var(--bg);
+  box-shadow: none;
+  border-bottom: 1px solid var(--border);
 }
 
 [data-theme="dark"] .hamburger span {
@@ -69,8 +71,9 @@
 }
 
 [data-theme="dark"] .nav-links {
-  background: var(--card-bg);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background: var(--bg);
+  box-shadow: none;
+  border-top: 1px solid var(--border);
 }
 
 /* -- Hero (text must stay white on the dark gradient) -- */
@@ -1438,6 +1441,12 @@ ul {
   padding: 1rem;
   border-top: 1px solid #eee;
   background: #fafafa;
+  scrollbar-width: none;           /* Firefox */
+  -ms-overflow-style: none;        /* IE / Edge */
+}
+
+.iptv-channels::-webkit-scrollbar {
+  display: none;                   /* Chrome / Safari */
 }
 
 .channel-grid {
