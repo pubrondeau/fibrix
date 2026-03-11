@@ -16,13 +16,11 @@ In 1988, a consortium of telecommunications giants did something that changed th
 Now, in 2026, we are finally bringing it home. This isn't just a salvage operation; it is telecommunications archaeology.
 
 [![Map of the TAT-8 fiber-optic trans-Atlantic 280-Mb/s cable](/assets/images/blog/72675.jpg "Map of the TAT-8 fiber-optic trans-Atlantic 280-Mb/s cable")](https://fibrixllp.org/assets/images/blog/72675.jpg)
-
-> Visual Brief for Junaid [1]: A cinematic shot of the MV Maasvliet’s stern. The massive winch is turning, and a thick, black, barnacle-encrusted cable is emerging from the dark, churning Atlantic waves. The lighting should be moody, capturing the "resurrection" of this historical relic.
-> >
-> The 18-Month Phenomenon
-> When the TAT-8 was first switched on, the engineers at Bell Labs and AT&T thought they had built enough capacity to last a decade. They were wrong. Within just 18 months, the cable was completely saturated.
-> The world’s hunger for data was exponential, not linear. That 1.3 \mu m wavelength light pulse was the starting gun for the modern world. Looking back at the specs today, they seem almost quaint, but in 1988, this was the equivalent of the moon landing for data.
-> The Original Pioneer: At a Glance
+>
+The 18-Month Phenomenon
+When the TAT-8 was first switched on, the engineers at Bell Labs and AT&T thought they had built enough capacity to last a decade. They were wrong. Within just 18 months, the cable was completely saturated.
+The world’s hunger for data was exponential, not linear. That 1.3 \mu m wavelength light pulse was the starting gun for the modern world. Looking back at the specs today, they seem almost quaint, but in 1988, this was the equivalent of the moon landing for data.
+The Original Pioneer: At a Glance
 
 | Feature | TAT-8 Specification |
 | --- | --- |
