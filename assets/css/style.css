@@ -2065,28 +2065,21 @@ ul {
 .share-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 0.4rem 0.75rem;
+  padding: 0.4rem;
   border-radius: 6px;
   text-decoration: none;
   background: transparent;
-  border: 1.5px solid;
-  transition: background 0.2s, opacity 0.2s;
+  border: none;
+  transition: opacity 0.2s;
 }
 
 .share-btn:hover {
-  opacity: 0.8;
+  opacity: 0.65;
 }
 
-.share-whatsapp, .share-whatsapp:visited { color: #25D366; border-color: #25D366; }
-.share-facebook, .share-facebook:visited { color: #1877F2; border-color: #1877F2; }
-.share-twitter, .share-twitter:visited { color: #555; border-color: #555; }
-
-.share-whatsapp:hover { background: rgba(37,211,102,0.1); }
-.share-facebook:hover { background: rgba(24,119,242,0.1); }
-.share-twitter:hover { background: rgba(0,0,0,0.06); }
+.share-whatsapp, .share-whatsapp:visited { color: #25D366; }
+.share-facebook, .share-facebook:visited { color: #1877F2; }
+.share-twitter, .share-twitter:visited { color: #555; }
 
 /* Blog Post — Related Posts */
 .related-posts {
@@ -2125,12 +2118,9 @@ ul {
   color: var(--text);
 }
 
-[data-theme="dark"] .share-whatsapp, [data-theme="dark"] .share-whatsapp:visited { color: #4ade80; border-color: #4ade80; }
-[data-theme="dark"] .share-whatsapp:hover { background: rgba(74,222,128,0.1); }
-[data-theme="dark"] .share-facebook, [data-theme="dark"] .share-facebook:visited { color: #60a5fa; border-color: #60a5fa; }
-[data-theme="dark"] .share-facebook:hover { background: rgba(96,165,250,0.1); }
-[data-theme="dark"] .share-twitter, [data-theme="dark"] .share-twitter:visited { color: #d1d5db; border-color: #d1d5db; }
-[data-theme="dark"] .share-twitter:hover { background: rgba(209,213,219,0.08); }
+[data-theme="dark"] .share-whatsapp, [data-theme="dark"] .share-whatsapp:visited { color: #4ade80; }
+[data-theme="dark"] .share-facebook, [data-theme="dark"] .share-facebook:visited { color: #60a5fa; }
+[data-theme="dark"] .share-twitter, [data-theme="dark"] .share-twitter:visited { color: #d1d5db; }
 
 [data-theme="dark"] .related-posts h3 {
   color: #fff;
