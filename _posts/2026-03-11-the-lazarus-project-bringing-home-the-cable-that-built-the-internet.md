@@ -16,6 +16,7 @@ In 1988, a consortium of telecommunications giants did something that changed th
 Now, in 2026, we are finally bringing it home. This isn't just a salvage operation; it is telecommunications archaeology.
 
 [![Map of the TAT-8 fiber-optic trans-Atlantic 280-Mb/s cable](/assets/images/blog/72675.jpg "Map of the TAT-8 fiber-optic trans-Atlantic 280-Mb/s cable")](https://fibrixllp.org/assets/images/blog/72675.jpg)
+
 >
 The 18-Month Phenomenon
 When the TAT-8 was first switched on, the engineers at Bell Labs and AT&T thought they had built enough capacity to last a decade. They were wrong. Within just 18 months, the cable was completely saturated.
@@ -34,12 +35,10 @@ The Voyage of the MV Maasvliet
 The recovery mission is being led by the MV Maasvliet, a beast of a vessel powered by three Volvo truck engines. But despite the high-tech diesel-electric propulsion, the work is surprisingly "low-tech" and incredibly dangerous.
 Because TAT-8 was laid in an era before automated spooling, the cable has to be coiled by hand in the ship’s hold. Imagine 6,000 kilometers of garden-hose-thick cable, slippery with deep-sea silt, being guided into place by a multinational crew while dodging North Atlantic storms like Dexter and Erin.
 Captain Vlad and his crew have been living this reality for months. It’s a world where Georgia soup dumplings (khinkali) prepared by the ship’s cook, Misha, are the only thing keeping morale high during a force-8 gale.
-
-> Visual Brief for Junaid [2]: Interior of the ship’s hold. A wide-angle shot showing the human scale of the operation. Workers in high-vis gear are manually coiling the black cable into a massive, spiraling nest. The atmosphere is industrial and sweaty, highlighting that the internet is a physical, heavy object.
-> >
-> The Circular Economy: From the Abyss to the Factory
-> Why spend millions to pull up a "zombie" cable? The answer is simple: the world is running out of copper.
-> Once the cable is offloaded at the port of Leixões, it heads to Port Elizabeth, South Africa. There, a facility called Mertech Marine performs a kind of alchemy. They achieve a 99% recovery rate on the materials. The high-grade copper used for the TAT-8 power conductors is more valuable now than it was when it was buried forty years ago.
+>
+The Circular Economy: From the Abyss to the Factory
+Why spend millions to pull up a "zombie" cable? The answer is simple: the world is running out of copper.
+Once the cable is offloaded at the port of Leixões, it heads to Port Elizabeth, South Africa. There, a facility called Mertech Marine performs a kind of alchemy. They achieve a 99% recovery rate on the materials. The high-grade copper used for the TAT-8 power conductors is more valuable now than it was when it was buried forty years ago.
 
 * Copper: Recycled into new electrical grids.
 * Steel: Repurposed for industrial construction.
