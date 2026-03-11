@@ -1,5 +1,5 @@
 ---
-title: "The Speed of Light Is Too Slow: Why Latency Is the Real Battle"
+title: 'The Speed of Light Is Too Slow: Why Latency Is the Real Battle'
 date: 2026-03-14
 author: shourjo
 category: Technology
@@ -9,7 +9,7 @@ tags:
   - latency
   - fiberoptic
 description: Your ISP promises gigabit speeds, but light through fiber only travels at 70% its vacuum speed. Why latency — not bandwidth — is the true bottleneck of the modern internet.
-image: ""
+image: /assets/images/blog/The Speed of Light Is Too Slow.jpg
 ---
 
 Here's something that should bother you: **the speed of light isn't fast enough for the internet**.
@@ -83,9 +83,9 @@ Nowhere is the latency obsession more extreme than in **financial trading**. In 
 
 Trading firms have:
 
-- Built **private microwave relay towers** between exchanges (microwaves travel at 99.7% of light speed in air vs. 68% in fiber) — saving ~4 ms between Chicago and New York.
+- Built **private microwave relay towers** between exchanges (microwaves travel at 99.7% of light speed in air vs. 68% in fiber) — saving \~4 ms between Chicago and New York.
 - Lobbied for **the straightest possible fiber routes**, because every slight bend in the cable adds microseconds.
-- Used **hollow-core fiber** — experimental cables where light travels through air inside the fiber, achieving ~99% of vacuum speed.
+- Used **hollow-core fiber** — experimental cables where light travels through air inside the fiber, achieving \~99% of vacuum speed.
 - Co-located servers **inside the exchange building** to shave off the last microseconds.
 
 The irony: the entire stock market has been physically redesigned around the speed of light being too slow.
@@ -108,7 +108,7 @@ Every major ISP, including Fibrix, peers with CDN providers to keep this local-c
 
 The global push to reduce latency has led to some remarkable engineering projects:
 
-- **Arctic submarine cables** — a cable through the Arctic from Tokyo to London would be ~30% shorter than the current route through Southeast Asia and the Suez Canal.
+- **Arctic submarine cables** — a cable through the Arctic from Tokyo to London would be \~30% shorter than the current route through Southeast Asia and the Suez Canal.
 - **The Equiano cable** (Google) — takes a new route down the west coast of Africa, adding a shorter path between Europe and South Africa.
 - **Hollow-core fiber** — still experimental, but if it scales, it could reduce in-fiber latency by **30%** instantly.
 
