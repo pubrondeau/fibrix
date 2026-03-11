@@ -2299,6 +2299,11 @@ ul {
 
   .blog-post-content {
     max-width: 100%;
+    padding: 0.8rem;
+  }
+
+  .blog-post .container {
+    padding: 0 0.5rem;
   }
 
   .blog-listing {
