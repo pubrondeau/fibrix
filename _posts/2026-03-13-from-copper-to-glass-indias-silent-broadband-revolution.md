@@ -9,7 +9,7 @@ tags:
   - fiberoptic
   - india
 description: The story of India's massive transition from copper telephone lines to fiber-to-the-home — BharatNet, 5G backhaul, and what 100 Mbps to every village actually means.
-image: ''
+image: /assets/images/blog/unnamed.jpg
 ---
 
 There's a quiet revolution happening under India's streets, and most people don't even know it's there.
