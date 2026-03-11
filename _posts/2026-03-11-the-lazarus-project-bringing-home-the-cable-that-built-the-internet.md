@@ -15,7 +15,7 @@ There is a silent ghost ship of sorts currently haunting the North Atlantic, but
 In 1988, a consortium of telecommunications giants did something that changed the world forever: they laid the TAT-8, the first-ever transatlantic fiber-optic cable. It was the physical bridge that allowed the digital age to cross the ocean. For fourteen years, it carried the pulses of the early internet, the fall of the Berlin Wall, and the first-ever transatlantic digital phone calls. Then, in 2002, it went dark.
 Now, in 2026, we are finally bringing it home. This isn't just a salvage operation; it is telecommunications archaeology.
 
-![Map of the TAT-8 fiber-optic trans-Atlantic 280-Mb/s cable](/assets/images/blog/72675.jpg "Map of the TAT-8 fiber-optic trans-Atlantic 280-Mb/s cable")
+[![Map of the TAT-8 fiber-optic trans-Atlantic 280-Mb/s cable](/assets/images/blog/72675.jpg "Map of the TAT-8 fiber-optic trans-Atlantic 280-Mb/s cable")](https://fibrixllp.org/assets/images/blog/72675.jpg)
 
 > Visual Brief for Junaid [1]: A cinematic shot of the MV Maasvliet’s stern. The massive winch is turning, and a thick, black, barnacle-encrusted cable is emerging from the dark, churning Atlantic waves. The lighting should be moody, capturing the "resurrection" of this historical relic.
 > >
