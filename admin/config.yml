@@ -2,8 +2,7 @@ backend:
   name: github
   repo: shourjo-h/fibrixllp.github.io
   branch: main
-  auth_type: pkce
-  app_id: Ov23lipDGL670lVhXps3
+  base_url: https://proud-smoke-de68.fibrix-llp.workers.dev
   cms_label_prefix: cms/
 
 media_folder: "assets/images/blog"
