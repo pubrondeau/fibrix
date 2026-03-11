@@ -604,7 +604,7 @@ ul {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
 }
 
 /* ===== HERO SECTION ===== */
@@ -1803,8 +1803,8 @@ ul {
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
+  gap: 1.5rem;
 }
 
 .blog-card {
@@ -2217,8 +2217,8 @@ ul {
   }
 
   .content-section {
-    padding: 1.5rem;
-    margin: 1.5rem;
+    padding: 1.2rem;
+    margin: 1rem 0;
   }
 
   .footer-grid {
@@ -2231,7 +2231,7 @@ ul {
 
   .contact-wrapper,
   .checkout-wrapper {
-    margin: 1.5rem;
+    margin: 1rem 0;
   }
 
   .plan-grid {
@@ -2293,8 +2293,16 @@ ul {
   }
 
   .share-buttons {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .blog-post-content {
+    max-width: 100%;
+  }
+
+  .blog-listing {
+    padding: 2rem 0 3rem;
   }
 }
 
