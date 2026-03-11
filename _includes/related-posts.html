@@ -1,0 +1,27 @@
+{% assign related = site.posts | where_exp: "post", "post.url != page.url" %}
+{% assign related_by_cat = related | where: "category", page.category %}
+{% if related_by_cat.size > 0 %}
+  {% assign show_posts = related_by_cat %}
+{% else %}
+  {% assign show_posts = related %}
+{% endif %}
+
+{% if show_posts.size > 0 %}
+<div class="related-posts">
+  <h3>Related Posts</h3>
+  <div class="related-posts-grid">
+    {% for post in show_posts limit: 2 %}
+    <a href="{{ post.url }}" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-date">{{ post.date | date: "%d %b %Y" }}</span>
+          <span class="blog-card-tag">{{ post.category }}</span>
+        </div>
+        <h4 class="blog-card-title" style="font-size:1.05rem;">{{ post.title }}</h4>
+        <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

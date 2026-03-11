@@ -1,0 +1,21 @@
+title: Fibrix Broadband
+description: "High-speed fiber broadband, IPTV packages, OTT subscriptions, enterprise leased lines, and professional networking hardware in West Bengal."
+url: "https://fibrixllp.org"
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor

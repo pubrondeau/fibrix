@@ -14,6 +14,8 @@ Official website for **[fibrixllp.org](https://fibrixllp.org)** - Fibrix Broadba
 | Privacy Policy | `privacy-policy.html` | Data collection, usage, and privacy practices |
 | Terms & Conditions | `terms.html` | Service terms for broadband & hardware |
 | Refund Policy | `refund-policy.html` | Refund & cancellation for services & hardware |
+| Blog | `blog.html` | Blog listing page with latest posts (Jekyll Liquid loop) |
+| Blog Posts | `_posts/*.md` | Markdown blog articles (Jekyll + Decap CMS) |
 
 ## Broadband Plans
 
@@ -64,25 +66,53 @@ Listed as a catalog (no e-commerce): Routers & Switches, ONU/ONT Devices, GPON/E
 
 ```
 fibrixllp.github.io/
+├── _config.yml                 (Jekyll configuration)
+├── _data/
+│   └── authors.yml             (Multi-author data: shourjo, arka)
+├── _includes/
+│   ├── head.html               (Parameterised <head> with SEO)
+│   ├── header.html             (Nav with active page detection)
+│   ├── footer.html             (4-column footer)
+│   ├── scripts.html            (Common JS: menu, header, loader, dark mode)
+│   ├── jsonld-homepage.html    (LocalBusiness structured data)
+│   ├── reading-time.html       (Auto reading time calc)
+│   ├── share-buttons.html      (WhatsApp, Facebook, X sharing)
+│   └── related-posts.html      (2 related posts by category)
+├── _layouts/
+│   ├── default.html            (Base HTML shell)
+│   ├── page.html               (Standard pages with page-header)
+│   └── post.html               (Blog post with author, tags, sharing)
+├── _posts/
+│   ├── 2026-01-15-welcome-to-fibrix-broadband.md
+│   ├── 2026-01-20-choosing-the-right-broadband-plan.md
+│   └── 2026-01-28-what-is-iptv-and-why-you-need-it.md
+├── admin/
+│   ├── index.html              (Decap CMS admin panel)
+│   └── config.yml              (CMS collections & fields)
 ├── assets/
 │   ├── css/
 │   │   └── style.css
 │   └── images/
-│       ├── logo-primary.png    (header & favicon)
-│       └── logo-footer.png     (footer)
+│       ├── authors/            (Author avatars)
+│       ├── blog/               (Blog featured images)
+│       ├── logo-primary.png    (Header & favicon)
+│       └── logo-footer.png     (Footer)
 ├── data/
 │   └── iptvchannel.csv         (IPTV channel data source)
 ├── index.html
 ├── about.html
 ├── contact.html
+├── blog.html                   (Liquid loop for post cards)
 ├── privacy-policy.html
 ├── terms.html
 ├── refund-policy.html
+├── feed.xml                    (RSS feed — auto-generated)
+├── Gemfile                     (Jekyll dependencies)
 ├── manifest.json               (PWA manifest)
-├── sw.js                       (service worker)
+├── sw.js                       (Service worker)
 ├── CNAME
 ├── robots.txt
-├── sitemap.xml
+├── sitemap.xml                 (Auto-generated with Liquid)
 └── README.md
 ```
 
@@ -111,7 +141,7 @@ Bill payments are handled externally at **[pay.fibrixllp.org](https://pay.fibrix
 ## UI Features
 
 - **Collapsible header** — hides on scroll down, shows on scroll up (all pages, all screen sizes)
-- **Navigation** — Home, IPTV, OTT, About Us, Contact Us, Pay Bill (IPTV & OTT link to homepage anchors from other pages)
+- **Navigation** — Home, IPTV, OTT, About Us, Contact Us, Blog, Pay Bill (IPTV & OTT link to homepage anchors from other pages)
 - **Dark mode** — moon/sun toggle in header, persisted via localStorage, respects `prefers-color-scheme`
 - **Page loader** — spinner overlay that fades out on page load
 - **Scroll reveal** — sections animate in as they enter the viewport (IntersectionObserver)
@@ -122,6 +152,8 @@ Bill payments are handled externally at **[pay.fibrixllp.org](https://pay.fibrix
 - **Hardware list cards** — numbered cards with red accent border, no images
 - **WhatsApp integration** — floating chat button on all pages
 - **Mobile-first responsive** — hamburger nav, stacked grids, optimised touch targets
+- **Blog** — Jekyll-powered blog with multi-author support, reading time, social sharing, related posts, tags, and featured images
+- **Decap CMS** — visual blog editor at `/admin/` for creating and editing posts via GitHub
 - **PWA installable** — manifest.json + service worker for offline caching and Add to Home Screen
 
 ## Hosting & Deployment
@@ -151,7 +183,8 @@ www -> shourjo-h.github.io
 ## SEO
 
 - `robots.txt` — allows all crawlers, points to sitemap
-- `sitemap.xml` — all 6 pages with priorities and lastmod dates
+- `sitemap.xml` — all pages + auto-generated blog post URLs via Liquid
+- `feed.xml` — RSS feed for blog posts
 - `<link rel="canonical">` on every page
 - Open Graph meta tags on all pages (title, description, type, url, image, site_name)
 - Twitter Card meta tags on all pages (summary_large_image)
@@ -167,11 +200,14 @@ www -> shourjo-h.github.io
 
 ## Tech Stack
 
-- Pure HTML5 + CSS3 + vanilla JavaScript
+- **Jekyll** — static site generator (GitHub Pages native)
+- **Decap CMS** — visual content management (GitHub backend, PKCE auth)
+- HTML5 + CSS3 + vanilla JavaScript
 - Google Fonts (Inter, weights 400–800)
 - GitHub Pages hosting
 - Google Forms backend for contact form
 - PWA (Progressive Web App) with service worker (`sw.js`) and `manifest.json`
+- RSS feed (`feed.xml`)
 
 ## Team
 

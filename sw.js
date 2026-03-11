@@ -1,4 +1,4 @@
-var CACHE_NAME = 'fibrix-v1';
+var CACHE_NAME = 'fibrix-v3';
 var urlsToCache = [
   '/',
   '/index.html',
@@ -7,6 +7,8 @@ var urlsToCache = [
   '/privacy-policy.html',
   '/terms.html',
   '/refund-policy.html',
+  '/blog.html',
+  '/feed.xml',
   '/assets/css/style.css',
   '/assets/images/logo-primary.png',
   '/assets/images/logo-footer.png'

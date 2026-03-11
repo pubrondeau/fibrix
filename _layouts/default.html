@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  {% include header.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+</html>
