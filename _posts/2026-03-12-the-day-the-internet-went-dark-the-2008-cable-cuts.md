@@ -1,5 +1,5 @@
 ---
-title: "The Day the Internet Went Dark: The 2008 Cable Cuts That Broke a Continent"
+title: 'The Day the Internet Went Dark: The 2008 Cable Cuts That Broke a Continent'
 date: 2026-03-12
 author: shourjo
 category: Technology
@@ -9,7 +9,7 @@ tags:
   - submarine-cables
   - infrastructure
 description: In 2008, a series of undersea cable cuts near Egypt knocked out internet access across the Middle East, India, and Southeast Asia — exposing the fragility of our global network.
-image: ""
+image: /assets/images/blog/maxresdefault.jpg
 ---
 
 On January 30, 2008, the internet didn't crash because of a cyberattack or a software bug. It crashed because of an **anchor**.
@@ -31,14 +31,15 @@ This wasn't just about not being able to browse YouTube. Stock exchanges slowed.
 
 ### The Damage at a Glance
 
+
 | Country/Region | Internet Capacity Lost |
 | --- | --- |
 | Egypt | 70% |
 | India | 50–60% |
-| Pakistan | ~70% |
-| Saudi Arabia | ~50% |
-| UAE | ~40% |
-| Bangladesh | ~80% |
+| Pakistan | \~70% |
+| Saudi Arabia | \~50% |
+| UAE | \~40% |
+| Bangladesh | \~80% |
 
 ## How Did This Happen?
 
