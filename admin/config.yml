@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: shourjo-h/fibrixllp.github.io
+  repo: pubrondeau/fibrix
   branch: main
-  base_url: https://proud-smoke-de68.fibrix-llp.workers.dev
+  base_url: https://fibrix.netlify.app/
   cms_label_prefix: cms/
 
 media_folder: "assets/images/blog"
